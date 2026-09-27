@@ -1,0 +1,18 @@
+name: irrigation-advisor
+description: Calculates watering needs based on crop type, soil moisture, and weather forecast.
+input_schema:
+  type: object
+  properties:
+    crop:
+      type: string
+      description: Target crop
+    soil_moisture:
+      type: number
+      description: Current soil moisture percentage (0-100)
+    forecast_rain:
+      type: number
+      description: Forecasted rainfall in mm
+  required:
+    - crop
+    - soil_moisture
+    - forecast_rain

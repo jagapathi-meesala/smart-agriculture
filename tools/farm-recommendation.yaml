@@ -1,0 +1,26 @@
+name: farm-recommendation
+description: Synthesizes all data points into a final, actionable recommendation for the farmer.
+input_schema:
+  type: object
+  properties:
+    soil_health_score:
+      type: number
+    suitable_crops:
+      type: array
+      items:
+        type: string
+    water_needed_liters:
+      type: number
+    weather_avg_temp:
+      type: number
+    disease_risk_level:
+      type: string
+    overall_risk_score:
+      type: number
+  required:
+    - soil_health_score
+    - suitable_crops
+    - water_needed_liters
+    - weather_avg_temp
+    - disease_risk_level
+    - overall_risk_score

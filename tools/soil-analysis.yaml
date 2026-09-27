@@ -1,0 +1,22 @@
+name: soil-analysis
+description: Evaluates soil parameters against standard baselines to determine health score and deficiencies.
+input_schema:
+  type: object
+  properties:
+    pH:
+      type: number
+      description: Soil pH level
+    N:
+      type: integer
+      description: Nitrogen content in mg/kg
+    P:
+      type: integer
+      description: Phosphorus content in mg/kg
+    K:
+      type: integer
+      description: Potassium content in mg/kg
+  required:
+    - pH
+    - N
+    - P
+    - K

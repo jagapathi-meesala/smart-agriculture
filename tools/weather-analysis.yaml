@@ -1,0 +1,13 @@
+name: weather-analysis
+description: Fetches and interprets weather data (temperature, rainfall, humidity).
+input_schema:
+  type: object
+  properties:
+    location:
+      type: string
+      description: Farm location
+    days:
+      type: integer
+      description: Number of days to forecast
+  required:
+    - location

@@ -1,0 +1,14 @@
+name: crop-suitability
+description: Recommends viable crops based on soil health and current season/climate.
+input_schema:
+  type: object
+  properties:
+    soil_health:
+      type: number
+      description: Soil health score (0-100)
+    region:
+      type: string
+      description: Geographical region of the farm
+  required:
+    - soil_health
+    - region

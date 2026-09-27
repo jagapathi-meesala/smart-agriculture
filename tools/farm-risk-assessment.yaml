@@ -1,0 +1,20 @@
+name: farm-risk-assessment
+description: Aggregates soil, weather, and disease risks into a holistic risk score.
+input_schema:
+  type: object
+  properties:
+    soil_deficiencies:
+      type: array
+      items:
+        type: string
+      description: List of soil deficiencies
+    weather_extremes:
+      type: boolean
+      description: Whether extreme weather conditions are expected
+    disease_risk:
+      type: string
+      description: Disease risk level (LOW/MED/HIGH)
+  required:
+    - soil_deficiencies
+    - weather_extremes
+    - disease_risk
